@@ -10,22 +10,6 @@ Claude.ai shows your usage limits on a settings page, but there's no API to quer
 2. **`parse_quota.py`** - A single Python script with two modes: `parse` (one-shot parse for one screenshot) and `monitor` (long-running mode that watches screenshots and updates `~/.claude/quota-data.json` for Claude Code status line usage).
 3. **`statusline.ps1`** - A PowerShell status line script that combines Claude Code's built-in context window percentage with your scraped quota percentage.
 
-## Output: Full Parse
-
-```json
-{
-  "captured_at": "2026-01-16T01:15:00+00:00",
-  "current_session": {
-    "percent_used": 42,
-    "resets_in": "3 hr 53 min"
-  },
-  "weekly_limits": {
-    "percent_used": 18,
-    "resets": "Thu 10:59 AM"
-  }
-}
-```
-
 ### Why a screenshot instead of a code block?
 
 Because the whole point is that it looks good. The JSON output is rendered in Windows 11 PowerShell with oh-my-posh and a properly installed Nerd Font, which took an embarrassingly non-trivial amount of effort to set up for someone who has spent 40 years avoiding Windows terminals on principle. A code block would just show you text; the screenshot is proof of non-suckiness.
