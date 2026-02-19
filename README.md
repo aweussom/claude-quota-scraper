@@ -35,14 +35,15 @@ Because the whole point is that it looks good. The JSON output is rendered in Wi
 ## Output: Claude Code Quota File (`~/.claude/quota-data.json`)
 
 ```json
+cat .\quota-data.json
 {
-  "quota_used_pct": 42.0,
-  "weekly_used_pct": 13.0,
-  "resets_in": "3 hr 33 min",
-  "weekly_resets": "Thu 11:00 AM",
-  "updated": "2026-02-19T10:30:00+00:00",
+  "quota_used_pct": 10,
+  "weekly_used_pct": 99,
+  "resets_in": "2 hr 38 min",
+  "weekly_resets": "13 hr 38 min",
+  "updated": "2026-02-19T18:24:37.351014+00:00",
   "valid": true,
-  "source_image": "claude_usage_2026-02-19_10-29-58.png"
+  "source_image": "claude_usage_2026-02-19_19-24-25.png"
 }
 ```
 
@@ -225,3 +226,4 @@ claude -p --chrome --output-format json --json-schema $schema $prompt
 ## License
 
 MIT
+
