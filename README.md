@@ -71,11 +71,13 @@ Get-Item .\capture_claude_usage.ps1 -Stream Zone.Identifier -ErrorAction Silentl
 Unblock-File .\capture_claude_usage.ps1
 ```
 
-Note: screenshot capture is most reliable on a single-monitor setup. With mixed monitor resolutions/DPI scaling (and browser zoom), Windows can report scaled screen bounds and the capture may be clipped (often on the right side). If this happens, temporarily disable the secondary monitor(s) or set all displays to the same scaling while capturing.
+Note: screenshot capture is most reliable on a single-monitor setup. With mixed monitor resolutions/DPI scaling (and browser zoom), Windows can report scaled screen bounds and the capture may be clipped (often on the right side). If this happens, temporarily disable the secondary monitor(s) or set all displays to the same scaling while capturing. Then get to work fixing this mess.
 
 Press `Ctrl+C` to stop.
 
 ### 2. Parse a Screenshot (One-Shot)
+
+Ollama CLoud has a free tier (for now)** — Ollama Cloud gives you access to massive models without paying per token (still requires an API key, and "free" is famously a temporary condition on the internet)
 
 Cloud example:
 
@@ -210,4 +212,5 @@ claude -p --chrome --output-format json --json-schema $schema $prompt
 ## License
 
 MIT
+
 
