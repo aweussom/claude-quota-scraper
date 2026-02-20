@@ -1,6 +1,8 @@
 # SUPERSEDED BY SIMPLER VERSION
 
-- https://github.com/aweussom/claude-code-quota
+- https://github.com/aweussom/claude-code-quota  
+
+This code will stay online, because it documents a very simple way to get full screen screenshots, and use a (free) LLM to decode information from it.
 
 # claude-quota-scraper
 
@@ -216,6 +218,7 @@ claude -p --chrome --output-format json --json-schema $schema $prompt
 ## License
 
 MIT
+
 
 
 
