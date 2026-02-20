@@ -199,6 +199,11 @@ done
 
 ## A less stupid option is: skip screenshots entirely (Claude Code + Chrome)
 
+Better version:
+- https://github.com/aweussom/claude-code-quota
+
+---
+
 This repo exists because Claude.ai doesn't expose a quota API, and screenshot+OCR is a hack.
 
 A cleaner approach would be to use Claude Code's Chrome integration to open `https://claude.ai/settings/usage` in your already-logged-in browser session and extract the quota values directly from the page (no screenshots, no DPI issues).
@@ -218,6 +223,7 @@ claude -p --chrome --output-format json --json-schema $schema $prompt
 ## License
 
 MIT
+
 
 
 
