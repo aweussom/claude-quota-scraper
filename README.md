@@ -1,3 +1,7 @@
+# SUPERSEDED BY SIMPLER VERSION
+
+- https://github.com/aweussom/claude-code-quota
+
 # claude-quota-scraper
 
 Monitor your Claude.ai usage quota by capturing screenshots and extracting structured data with an Ollama vision model.
@@ -212,5 +216,6 @@ claude -p --chrome --output-format json --json-schema $schema $prompt
 ## License
 
 MIT
+
 
 
